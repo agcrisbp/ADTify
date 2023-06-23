@@ -51,6 +51,8 @@ SPOTIFY_SECRET_ID='____'
 FIREBASE='__BASE64_FIREBASE_JSON_FILE__'
 ```
 
+![Example](/img/env.png)
+
 - Run `vercel dev`
 
 ```sh
