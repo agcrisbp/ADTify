@@ -10,7 +10,7 @@ Create Spotify now playing card on your [ADLink](https://bit.ly/ADLink-Docs) web
 Running on Vercel serverless function, store data in Firebase (store only access_token, refresh_token, token_expired_timestamp)
 
 ### Live Version
-![Live](https://spotify.aghea.site/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=ff73ff)
+<a href="https://bit.ly/redirect-spotify"><img src="https://spotify.aghea.site/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=ff73ff" /></a>
 
 ### Example
 ![Example](/img/natemoo-re.svg)
