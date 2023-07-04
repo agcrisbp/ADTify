@@ -10,7 +10,8 @@ Create Spotify now playing card on your [ADLink](https://bit.ly/ADLink-Docs) web
 Running on Vercel serverless function, store data in Firebase (store only access_token, refresh_token, token_expired_timestamp)
 
 <p align="center">
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/822a804211fb904d8f1a034884e11754/raw/d75ce398b00b04eb37b61af1bf53a0005cf452cb/clone.json&logo=github'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/7acff1fbf435b6319be7a65a199e75e1/raw/clone.json&logo=github'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/7acff1fbf435b6319be7a65a199e75e1/raw/clone.json&logo=githubactions'>
 </p>
 
 ### Live Version
