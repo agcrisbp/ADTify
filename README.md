@@ -11,7 +11,7 @@ Running on Vercel serverless function, store data in Firebase (store only access
 
 <p align="center">
     <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/7acff1fbf435b6319be7a65a199e75e1/raw/clone.json&logo=github'>
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/7acff1fbf435b6319be7a65a199e75e1/raw/clone.json&logo=githubactions'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/7acff1fbf435b6319be7a65a199e75e1/raw/clone.json&logo=githubactions&logoColor=white'>
 </p>
 
 ### Live Version
