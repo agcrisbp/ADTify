@@ -9,7 +9,7 @@ app = Flask(__name__)
 @app.route("/<path:path>")
 def catch_all(path):
 
-    login_url = f"https://accounts.spotify.com/authorize?client_id={spotify.SPOTIFY_CLIENT_ID}&response_type=code&scope=user-read-currently-playing,user-read-recently-played,user-top-read&redirect=uri={spotify.REDIRECT_URI}"
+    login_url = f"https://accounts.spotify.com/authorize?client_id={spotify.SPOTIFY_CLIENT_ID}&response_type=code&scope=user-top-read,user-read-currently-playing,user-read-recently-played&redirect_uri={spotify.REDIRECT_URI}"
 
     return redirect(login_url)
 
