@@ -17,15 +17,17 @@ REDIRECT_URI = "{}/callback".format(BASE_URL)
 
 # scope user-read-currently-playing,user-read-recently-played
 SPOTIFY_URL_REFRESH_TOKEN = "https://accounts.spotify.com/api/token"
+
 SPOTIFY_URL_NOW_PLAYING = (
     "https://api.spotify.com/v1/me/player/currently-playing?additional_types=track,episode"
 )
 SPOTIFY_URL_RECENTLY_PLAY = "https://api.spotify.com/v1/me/player/recently-played?limit=1"
 
 SPOTIFY_URL_GENERATE_TOKEN = "https://accounts.spotify.com/api/token"
+
 SPOTIFY_URL_USER_INFO = "https://api.spotify.com/v1/me"
 
-SPOTIFY_URL_TOP_ARTISTS = "https://api.spotify.com/v1/me/top/artists?limit=20&offset=20"
+SPOTIFY_URL_TOP_TRACKSS = "https://api.spotify.com/v1/me/top/tracks"
 
 
 def get_authorization():
@@ -99,11 +101,11 @@ def get_now_playing(access_token):
     repsonse_json = response.json()
     return repsonse_json
     
-def get_top_artists(access_token):
+def get_top_tracks(access_token):
 
     headers = {"Authorization": f"Bearer {access_token}"}
 
-    response = requests.get(SPOTIFY_URL_TOP_ARTISTS, headers=headers)
+    response = requests.get(SPOTIFY_URL_TOP_TRACKS, headers=headers)
 
     if response.status_code == 204:
         return {}
