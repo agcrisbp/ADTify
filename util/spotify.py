@@ -27,6 +27,8 @@ SPOTIFY_URL_GENERATE_TOKEN = "https://accounts.spotify.com/api/token"
 
 SPOTIFY_URL_USER_INFO = "https://api.spotify.com/v1/me"
 
+SPOTIFY_URL_USER_TOP_READ = "https://api.spotify.com/v1/me/top/tracks"
+
 
 def get_authorization():
 
@@ -99,3 +101,14 @@ def get_now_playing(access_token):
     repsonse_json = response.json()
     return repsonse_json
     
+def get_user_top_read(access_token):
+
+    headers = {"Authorization": f"Bearer {access_token}"}
+
+    response = requests.get(SPOTIFY_URL_USER_TOP_READ, headers=headers)
+
+    if response.status_code == 204:
+        return {}
+
+    repsonse_json = response.json()
+    return repsonse_json
