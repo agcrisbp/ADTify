@@ -15,7 +15,7 @@ BASE_URL = os.getenv("BASE_URL")
 
 REDIRECT_URI = "{}/callback".format(BASE_URL)
 
-# scope user-read-currently-playing,user-read-recently-played
+# scope user_top_read,user-read-currently-playing,user-read-recently-played
 SPOTIFY_URL_REFRESH_TOKEN = "https://accounts.spotify.com/api/token"
 
 SPOTIFY_URL_NOW_PLAYING = (
