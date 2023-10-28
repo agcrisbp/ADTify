@@ -29,7 +29,7 @@ SPOTIFY_URL_USER_INFO = "https://api.spotify.com/v1/me"
 
 SPOTIFY_URL_USER_TOP_READ = "https://api.spotify.com/v1/me/top/tracks"
 
-SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/users/{user_id}/playlists"
+SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/users/{user_id}/playlists?offset=0&limit=5"
 
 
 def get_authorization():
