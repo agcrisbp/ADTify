@@ -50,9 +50,9 @@ def generate_token(authorization_code):
     headers = {"Authorization": "Basic {}".format(get_authorization())}
 
     response = requests.post(SPOTIFY_URL_GENERATE_TOKEN, data=data, headers=headers)
-    repsonse_json = response.json()
+    response_json = response.json()
 
-    return repsonse_json
+    return response_json
 
 
 def refresh_token(refresh_token):
@@ -65,9 +65,9 @@ def refresh_token(refresh_token):
     headers = {"Authorization": "Basic {}".format(get_authorization())}
 
     response = requests.post(SPOTIFY_URL_REFRESH_TOKEN, data=data, headers=headers)
-    repsonse_json = response.json()
+    response_json = response.json()
 
-    return repsonse_json
+    return response_json
 
 
 def get_user_profile(access_token):
@@ -75,9 +75,9 @@ def get_user_profile(access_token):
     headers = {"Authorization": "Bearer {}".format(access_token)}
 
     response = requests.get(SPOTIFY_URL_USER_INFO, headers=headers)
-    repsonse_json = response.json()
+    response_json = response.json()
 
-    return repsonse_json
+    return response_json
 
 
 def get_recently_play(access_token):
@@ -89,8 +89,8 @@ def get_recently_play(access_token):
     if response.status_code == 204:
         return {}
 
-    repsonse_json = response.json()
-    return repsonse_json
+    response_json = response.json()
+    return response_json
 
 
 def get_now_playing(access_token):
@@ -102,8 +102,8 @@ def get_now_playing(access_token):
     if response.status_code == 204:
         return {}
 
-    repsonse_json = response.json()
-    return repsonse_json
+    response_json = response.json()
+    return response_json
     
 def get_user_top_read(access_token):
 
@@ -114,8 +114,8 @@ def get_user_top_read(access_token):
     if response.status_code == 204:
         return {}
 
-    repsonse_json = response.json()
-    return repsonse_json
+    response_json = response.json()
+    return response_json
 
 def get_playlist_read_private(access_token):
     headers = {"Authorization": f"Bearer {access_token}"}
