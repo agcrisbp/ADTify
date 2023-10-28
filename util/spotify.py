@@ -29,7 +29,7 @@ SPOTIFY_URL_USER_INFO = "https://api.spotify.com/v1/me"
 
 SPOTIFY_URL_USER_TOP_READ = "https://api.spotify.com/v1/me/top/tracks"
 
-SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/me/shows?offset=0&limit=20"
+SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/users/{user_id}/playlists"
 
 
 def get_authorization():
@@ -119,7 +119,7 @@ def playlist_read_collaborative(access_token):
 
     headers = {"Authorization": f"Bearer {access_token}"}
 
-    response = requests.get(SPOTIFY_URL_USER_TOP_READ, headers=headers)
+    response = requests.get(SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE, headers=headers)
 
     if response.status_code == 204:
         return {}
