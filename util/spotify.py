@@ -29,9 +29,9 @@ SPOTIFY_URL_USER_INFO = "https://api.spotify.com/v1/me"
 
 SPOTIFY_URL_USER_TOP_READ = "https://api.spotify.com/v1/me/top/tracks"
 
-SPOTIFY_URL_PLAYLIST_READ_PRIVATE = "https://api.spotify.com/v1/users/8glrlrg13vyc6hu8tgw6sfvez/playlists?offset=0&limit=20"
+SPOTIFY_URL_PLAYLIST_READ_PRIVATE = "https://api.spotify.com/v1/me/playlists"
 
-SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/users/8glrlrg13vyc6hu8tgw6sfvez/playlists?offset=0&limit=20"
+SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/me/playlists"
 
 
 def get_authorization():
@@ -117,7 +117,7 @@ def get_user_top_read(access_token):
     repsonse_json = response.json()
     return repsonse_json
     
-def get_playlist_read_private(access_token):
+def get_user_playlists(access_token):
 
     headers = {"Authorization": f"Bearer {access_token}"}
 
@@ -129,7 +129,7 @@ def get_playlist_read_private(access_token):
     repsonse_json = response.json()
     return repsonse_json
     
-def get_playlist_read_collaborative(access_token):
+def get_user_playlists(access_token):
 
     headers = {"Authorization": f"Bearer {access_token}"}
 
