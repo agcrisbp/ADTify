@@ -115,7 +115,7 @@ def get_user_top_read(access_token):
     repsonse_json = response.json()
     return repsonse_json
     
-def playlist_read_collaborative(access_token):
+def get_playlist_read_collaborative(access_token):
 
     headers = {"Authorization": f"Bearer {access_token}"}
 
