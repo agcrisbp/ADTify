@@ -8,7 +8,7 @@ Spotify APi for [ADLink](https://bit.ly/ADLink-Docs) <br>
 Create Spotify now playing card on your [ADLink](https://bit.ly/ADLink-Docs) website.
 
 - The callback code using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format.
-- The frontend code using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402)
+- The frontend code using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402).
 
 Running on Vercel serverless function, store data in Firebase (store only access_token, refresh_token, token_expired_timestamp)
 
