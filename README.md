@@ -1,14 +1,12 @@
 <h1 align="center">
 
-Spotify APi for [ADLink](https://bit.ly/ADLink-Docs) <br>
+Spotify Web APi for [ADLink](https://bit.ly/ADLink-Docs) & [ADPortfolio](https://github.com/agcrisbp/ADPortfolio) <br>
 <small>(Extends from [spotify-github-profile](https://github.com/kittinan/spotify-github-profile) inspire by [Natemoo-re](https://github.com/natemoo-re))</small>.
 
 </h1>
 
-Create Spotify now playing card on your [ADLink](https://bit.ly/ADLink-Docs) website.
-
-- The callback code using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://adlink.aghea.site/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/Spotify-ADLink/blob/main/README.md?plain=1#live-version).
-- The frontend code using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402).
+- Example code to callback the APi using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://adlink.aghea.site/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/Spotify-ADLink/blob/main/README.md?plain=1#live-version).
+- Example code for the frontend using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402).
 
 ---
 
