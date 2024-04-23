@@ -5,7 +5,7 @@ Spotify Web APi for [ADLink](https://bit.ly/ADLink-Docs) & [ADPortfolio](https:/
 
 </h1>
 
-- Example code to callback the APi using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://adlink.aghea.site/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/Spotify-ADLink/blob/main/README.md?plain=1#live-version).
+- Example code to callback the APi using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://adlink.aghea.biz.id/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/Spotify-ADLink/blob/main/README.md?plain=1#live-version).
 - Example code for the frontend using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402).
 
 ---
@@ -18,7 +18,7 @@ Running on Vercel serverless function, store data in Firebase (store only access
 </p>
 
 ### Live Version
-<a href="https://bit.ly/redirect-spotify"><img src="https://spotify.aghea.site/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=ff73ff" /></a>
+<a href="https://agcrisbp.vercel.app/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&redirect=true"><img src="https://agcrisbp.vercel.app/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&cover_image=true&theme=natemoo-re&show_offline=false&background_color=ff00ff&interchange=true&bar_color_cover=false&bar_color=ff00f" /></a>
 
 ### Example
 ![Example](/img/natemoo-re.svg)
