@@ -33,6 +33,23 @@ SPOTIFY_URL_PLAYLIST_READ_PRIVATE = "https://api.spotify.com/v1/me/playlists"
 
 SPOTIFY_URL_PLAYLIST_READ_COLLABORATIVE = "https://api.spotify.com/v1/users/8glrlrg13vyc6hu8tgw6sfvez/playlists"
 
+SPOTIFY_URL_EPISODE = "https://api.spotify.com/v1/episodes/{id}"
+
+def get_episode_by_id(access_token, episode_id):
+    headers = {"Authorization": f"Bearer {access_token}"}
+    url = SPOTIFY_URL_EPISODE.format(id=episode_id)
+
+    response = requests.get(url, headers=headers)
+    
+    if response.status_code == 404:
+        return {"error": "Episode not found"}
+    elif response.status_code == 401:
+        return {"error": "Unauthorized - Invalid access token"}
+    elif response.status_code != 200:
+        return {"error": f"Failed to fetch episode. Status code: {response.status_code}"}
+
+    return response.json()
+
 
 def get_authorization():
 

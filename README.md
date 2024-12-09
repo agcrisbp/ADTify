@@ -18,7 +18,7 @@ Running on Vercel serverless function, store data in Firebase (store only access
 </p>
 
 ### Live Version
-<a href="https://agcrisbp.vercel.app/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&redirect=true"><img src="https://agcrisbp.vercel.app/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&cover_image=true&theme=natemoo-re&show_offline=false&background_color=ff00ff&interchange=true&bar_color_cover=false&bar_color=ff00f" /></a>
+<a href="https://agcrisbp.vercel.app/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&redirect=true"><img src="https://agcrisbp.vercel.app/api/view.svg?uid=8glrlrg13vyc6hu8tgw6sfvez&cover_image=true&theme=natemoo-re&show_offline=false&background_color=121212&interchange=true&bar_color=ff00ff" /></a>
 
 ### Example
 ![Example](/img/natemoo-re.svg)
