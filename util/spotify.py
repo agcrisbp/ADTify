@@ -94,94 +94,16 @@ def get_recently_play(access_token):
 
 
 def get_now_playing(access_token):
-    """
-    Fetch the currently playing track or episode.
-    """
+
     headers = {"Authorization": f"Bearer {access_token}"}
 
     response = requests.get(SPOTIFY_URL_NOW_PLAYING, headers=headers)
 
     if response.status_code == 204:
-        return {}  # No content playing
+        return {}
 
     response_json = response.json()
-
-    # Handle both tracks and episodes
-    if "item" in response_json:
-        item = response_json["item"]
-        if item["type"] == "episode":  # Podcast episode
-            return {
-                "is_playing": response_json["is_playing"],
-                "progress_ms": response_json["progress_ms"],
-                "episode": {
-                    "name": item["name"],
-                    "show": item["show"]["name"],
-                    "description": item["description"],
-                    "release_date": item["release_date"],
-                    "external_urls": item["external_urls"],
-                    "duration_ms": item["duration_ms"],
-                    "images": item.get("images") or item["show"].get("images"),
-                },
-            }
-        elif item["type"] == "track":  # Music track
-            return {
-                "is_playing": response_json["is_playing"],
-                "progress_ms": response_json["progress_ms"],
-                "track": {
-                    "name": item["name"],
-                    "artists": item["artists"],
-                    "album": item["album"],
-                    "external_urls": item["external_urls"],
-                    "duration_ms": item["duration_ms"],
-                    "images": item["album"]["images"],
-                },
-            }
-
-    return {}  # Fallback if no valid item is found
-
-
-def get_recently_play(access_token):
-    """
-    Fetch the most recently played track or episode.
-    """
-    headers = {"Authorization": f"Bearer {access_token}"}
-
-    response = requests.get(SPOTIFY_URL_RECENTLY_PLAY, headers=headers)
-
-    if response.status_code == 204:
-        return {}  # No recent playback found
-
-    response_json = response.json()
-
-    if "items" in response_json and response_json["items"]:
-        item = response_json["items"][0]["track"]
-        if item["type"] == "episode":  # Podcast episode
-            return {
-                "played_at": response_json["items"][0]["played_at"],
-                "episode": {
-                    "name": item["name"],
-                    "show": item["show"]["name"],
-                    "description": item["description"],
-                    "release_date": item["release_date"],
-                    "external_urls": item["external_urls"],
-                    "duration_ms": item["duration_ms"],
-                    "images": item.get("images") or item["show"].get("images"),
-                },
-            }
-        elif item["type"] == "track":  # Music track
-            return {
-                "played_at": response_json["items"][0]["played_at"],
-                "track": {
-                    "name": item["name"],
-                    "artists": item["artists"],
-                    "album": item["album"],
-                    "external_urls": item["external_urls"],
-                    "duration_ms": item["duration_ms"],
-                    "images": item["album"]["images"],
-                },
-            }
-
-    return {}  # Fallback if no valid item is found
+    return response_json
     
 def get_user_top_read(access_token):
 
