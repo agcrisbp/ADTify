@@ -5,7 +5,7 @@ Spotify Web APi for [ADLink](https://bit.ly/ADLink-Docs) & [ADPortfolio](https:/
 
 </h1>
 
-- Example code to callback the APi using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://adlink.aghea.biz.id/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/Spotify-ADLink/blob/main/README.md?plain=1#live-version).
+- Example code to callback the APi using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://ad-link-docs.vercel.app/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/ADTify/blob/main/README.md?plain=1#live-version).
 - Example code for the frontend using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402).
 
 ---
@@ -31,7 +31,7 @@ To develop locally, you need:
 - A Spotify developer account
 
 #### Setting up Vercel
-- [Create a new Vercel project by importing](https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2Fagcrisbp%2FSpotify-ADLink&hasTrialAvailable=0&showOptionalTeamCreation=false&project-name=Spotify-ADLink&framework=other&totalProjects=1&remainingProjects=1) this repository.
+- [Create a new Vercel project by importing](https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2Fagcrisbp%2FADTify&hasTrialAvailable=0&showOptionalTeamCreation=false&project-name=ADTify&framework=other&totalProjects=1&remainingProjects=1) this repository.
 
 #### Setting up Firebase
 - Create [a new Firebase project](https://console.firebase.google.com/u/0/)
