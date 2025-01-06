@@ -7,6 +7,7 @@ Spotify Web APi for [ADLink](https://bit.ly/ADLink-Docs) & [ADPortfolio](https:/
 
 - Example code to callback the APi using .tsx: [Spotify.tsx](https://gist.github.com/agcrisbp/0a1f1762b5a9dde045b1a87e7cba7892). But you can also use MDX or HTML format, read the [documentation](https://ad-link-docs.vercel.app/frontend#add-spotify-status) or [Live Version](https://github.com/agcrisbp/ADTify/blob/main/README.md?plain=1#live-version).
 - Example code for the frontend using .tsx: [music.tsx](https://gist.github.com/agcrisbp/7153e7b8cdb6655dc0806586184a2402).
+- Example web: [ADTify-Web](https://github.com/agcrisbp/ADTify-Web).
 
 ---
 
