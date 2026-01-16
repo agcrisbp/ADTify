@@ -170,7 +170,7 @@
     function updateUrl() {
       var viewUrl = `{{BASE_URL}}/view${orgMode ? '.svg': ''}?`;
       var viewUrlWithParams = viewUrl + $.param(urlParams, true);
-      var url = "http://m.agcrisbp.my.id";
+      var url = "https://aghea.vercel.app";
       if (openSong) {
         url = viewUrl + $.param({uid: uid, redirect: true}, true);;
       }
