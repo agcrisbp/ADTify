@@ -31,7 +31,8 @@ def catch_all(path):
     code = request.args.get("code")
 
     if code is None:
-        return redirect("/api/login")
+        # TODO: no code
+        return Response("not ok")
 
     token_info = spotify.generate_token(code)
     access_token = token_info["access_token"]
